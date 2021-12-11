@@ -59,7 +59,7 @@
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: 27px 130px 38px 130px;
+  padding: 27px 130px 21px 130px;
   box-sizing: border-box;
 
   @media (max-width: $tablet-max-width) {
@@ -140,6 +140,7 @@
 .page-header__logo-link svg:nth-child(3n) {
   width: 147px;
   height: 40px;
+  margin-bottom: 15px;
 
   fill: $white;
 
@@ -253,6 +254,7 @@
   @include reset-style-list;
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 74.3%;
   padding-top: 13px;
@@ -292,11 +294,15 @@
 
 .page-header__item {
   margin-left: 11.3%;
+  padding-top: 3px;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
 
   @media (max-width: $tablet-max-width) {
     width: 100%;
     padding: 15px 15px 17px 15px;
     margin-left: 0;
+    margin-bottom: 0;
     box-sizing: border-box;
 
     text-align: center;
@@ -307,21 +313,10 @@
 }
 
 .page-header__item--active {
-  position: relative;
-}
-
-.page-header__item--active::before {
-  position: absolute;
-  bottom: -17px;
-  left: 0;
-  content: "";
-
-  width: 100%;
-  height: 2px;
-  background-color: $white;
+  border-bottom: 2px solid $white;
 
   @media (max-width: $tablet-max-width) {
-    display: none;
+    border-bottom: none;
   }
 }
 
