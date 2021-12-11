@@ -47,17 +47,20 @@
   }
 }
 
+.page-header__inner {
+  background-color: rgba($black, 0.3);
+}
+
 //Навигация
 .page-header__navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 27px 130px 38px 130px;
   box-sizing: border-box;
-
-  background-color: rgba($black, 0.3);
 
   @media (max-width: $tablet-max-width) {
     display: block;
@@ -359,7 +362,7 @@
 .page-header__link[href]:focus,
 .page-header__logo-link[href]:focus,
 .page-header__button:focus {
-  outline: 2px solid $crimson;
+  outline: 2px solid $grey;
 }
 
 //active

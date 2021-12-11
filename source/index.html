@@ -9,48 +9,50 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+  <!-- page-header--nojs - откpытое меню при отключенном js, кнопки нет
+    page-header--closed - закрытое меню, кнопка для открытия /бургер/
+    page-header--opened - открытое меню, кнопка для закрытия /крестик/ -->
   <header class = "page-header page-header--closed page-header--nojs">
-    <!-- main-navigation--nojs - откpытое меню при отключенном js, кнопки нет
-    main-navigation--closed - закрытое меню, кнопка для открытия /бургер/
-    main-navigation--opened - открытое меню, кнопка для закрытия /крестик/ -->
-    <nav class="page-header__navigation">
-      <div class="page-header__top-menu">
-        <a class="page-header__logo-link">
-          <svg width="74" height="23">
-            <use xlink:href="img/sprite_auto.svg#icon-logo-header-mobile"></use>
-          </svg>
-          <svg width="145" height="40">
-            <use xlink:href="img/sprite_auto.svg#icon-logo-header-tablet"></use>
-          </svg>
-          <svg width="147" height="40">
-            <use xlink:href="img/sprite_auto.svg#icon-logo-header-desktop"></use>
-          </svg>
-        </a>
-        <button class="page-header__button" type="button"></button>
-      </div>
-      <ul class="page-header__list">
-        <li class="page-header__item page-header__item--active">
-          <a class="page-header__link">
-            Главная
+    <div class = "page-header__inner">
+      <nav class="page-header__navigation">
+        <div class="page-header__top-menu">
+          <a class="page-header__logo-link">
+            <svg width="74" height="23">
+              <use xlink:href="img/sprite_auto.svg#icon-logo-header-mobile"></use>
+            </svg>
+            <svg width="145" height="40">
+              <use xlink:href="img/sprite_auto.svg#icon-logo-header-tablet"></use>
+            </svg>
+            <svg width="147" height="40">
+              <use xlink:href="img/sprite_auto.svg#icon-logo-header-desktop"></use>
+            </svg>
           </a>
-        </li>
-        <li class="page-header__item">
-          <a class="page-header__link" href="#">
-            Фотографии
-          </a>
-        </li>
-        <li class="page-header__item">
-          <a class="page-header__link" href="#">
-            Конкурс
-          </a>
-        </li>
-        <li class="page-header__item">
-          <a class="page-header__link" href="#">
-            HTML Academy
-          </a>
-        </li>
-      </ul>
-    </nav>
+          <button class="page-header__button" type="button"></button>
+        </div>
+        <ul class="page-header__list">
+          <li class="page-header__item page-header__item--active">
+            <a class="page-header__link">
+              Главная
+            </a>
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__link" href="#">
+              Фотографии
+            </a>
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__link" href="#">
+              Конкурс
+            </a>
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__link" href="#">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
     <h1>Сайт фотоприложения для раскрашивания серых будней</h1>
