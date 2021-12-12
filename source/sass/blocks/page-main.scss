@@ -1,0 +1,40 @@
+.page-main--catalog h1 {
+  width: 358px;
+  margin: 0 auto;
+  margin-top: -210px;
+  margin-bottom: 204px;
+
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 68px;
+  text-align: center;
+
+  color: $white;
+
+  @media (max-width: $tablet-max-width) {
+    margin-top: -249px;
+    margin-bottom: 243px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 172px;
+    margin-top: -135px;
+    margin-bottom: 138px;
+
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+
+.page-main--catalog.page-main--nojs h1 {
+  @media (max-width: $tablet-max-width) {
+    margin-top: -265px;
+    margin-bottom: 227px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-top: -143px;
+    margin-bottom: 138px;
+  }
+}

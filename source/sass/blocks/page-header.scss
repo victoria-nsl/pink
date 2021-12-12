@@ -1,39 +1,60 @@
 .page-header {
-  min-height: 853px;
-
   background-color: $black-text;
-  background-image: url("../img/header-back-index-desktop.jpg");
+  background-image: url("../img/header-back-desktop.jpg");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: 100%;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/header-back-index-desktop@2x.jpg");
+    background-image: url("../img/header-back-desktop@2x.jpg");
     background-size: 100% auto;
   }
 
   @media (max-width: $tablet-max-width) {
-    min-height: 729px;
-
-    background-image: url("../img/header-back-index-tablet.jpg");
+    background-image: url("../img/header-back-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/header-back-index-tablet@2x.jpg");
+      background-image: url("../img/header-back-tablet@2x.jpg");
     }
   }
 
   @media (max-width: $mobile-max-width) {
-    min-height: 466px;
-
-    background-image: url("../img/header-back-index-mobile.jpg");
+    background-image: url("../img/header-back-mobile.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/header-back-index-mobile@2x.jpg");
+      background-image: url("../img/header-back-mobile@2x.jpg");
     }
   }
 }
 
-.page-header--nojs {
+.page-header--index {
+  min-height: 853px;
+
+  background-position: center;
+
+  @media (max-width: $tablet-max-width) {
+    min-height: 729px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    min-height: 466px;
+  }
+}
+
+.page-header--catalog {
+  min-height: 394px;
+
+  background-position: center top;
+
+  @media (max-width: $tablet-max-width) {
+    min-height: 440px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    min-height: 237px;
+  }
+}
+
+.page-header--index.page-header--nojs {
   @media (max-width: $tablet-max-width) {
     min-height: 984px;
 
@@ -47,8 +68,35 @@
   }
 }
 
+.page-header--catalog.page-header--nojs {
+  @media (max-width: $tablet-max-width) {
+    min-height: 635px;
+
+    background-position: center 255px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    min-height: 496px;
+
+    background-position: center 260px;
+  }
+}
+
+//Полоса с полупрозрачным фоном
 .page-header__inner {
   background-color: rgba($black, 0.3);
+}
+
+.page-header--catalog .page-header__inner {
+  margin-bottom: 284px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 330px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 171px;
+  }
 }
 
 //Навигация
@@ -258,6 +306,7 @@
   align-items: center;
   width: 74.3%;
   padding-top: 13px;
+
 
   @media (max-width: $tablet-max-width) {
     flex-direction: column;
