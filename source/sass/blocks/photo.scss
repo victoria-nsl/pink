@@ -1,0 +1,175 @@
+.photo > p {
+  width: 572px;
+  margin: 0 auto;
+  margin-bottom: 97px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: $black-text;
+}
+
+//Карточки с фотографиями
+.photo__photos-small {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 940px;
+  margin: 0 auto;
+}
+
+.photo__figure {
+  margin: 0;
+}
+
+.photo__figure--big {
+  margin-bottom: 50px;
+}
+
+.photo__figure--small {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 54px;
+}
+
+.photo__image-link {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+}
+
+.photo__image-link img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo__image-link--big p {
+  position: absolute;
+  top: 54px;
+  right: 130px;
+
+  width: 140px;
+  margin: 0;
+  padding: 13px 18px;
+  box-sizing: border-box;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+
+  background-color: $crimson;
+}
+
+//Отзыв
+.photo__feedback {
+  background-color: $grey;
+}
+
+.photo__feedback--big {
+  position: relative;
+
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 27px;
+  box-sizing: border-box;
+}
+
+.photo__feedback--small {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 155px;
+  padding: 32px 27px 30px 27px;
+  box-sizing: border-box;
+}
+
+.photo__feedback blockquote {
+  margin: 0;
+}
+
+.photo__feedback--small blockquote {
+  flex-grow: 1;
+}
+
+.photo__feedback cite {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: $black-text;
+}
+
+.photo__feedback time {
+  margin-left: 3px;
+
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color: $black-text;
+}
+
+.photo__feedback p {
+  margin: 0;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $black-text;
+}
+
+//Лайк
+.photo__like {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photo__like--big {
+  position: absolute;
+  top: 30px;
+  right: 31px;
+
+  width: 119px;
+}
+
+.photo__like p {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $crimson;
+}
+
+.photo__like span {
+  margin-left: 3px;
+}
+
+.photo__button-like {
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.photo__button-like svg {
+  width: 13px;
+  height: 12px;
+
+  fill: $crimson;
+}
