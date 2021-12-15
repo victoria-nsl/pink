@@ -275,6 +275,75 @@
         </figure>
       </div>
     </section>
+
+    <section class="user-post">
+      <h2 class="visually-hidden">Запостить фотографию пользователя</h2>
+      <p>Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+      <form class="user-post__form" action="https://echo.htmlacademy.ru" method="get">
+
+        <div class="user-post__upload">
+          <div class="user-post__wrapper-image">
+            <picture>
+              <source type="image/webp" media="(max-width: 659px)" srcset="img/catalog-post-mobile.webp 1x, img/catalog-post-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/catalog-post-tablet.webp 1x, img/catalog-post-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/catalog-post-desktop.webp 1x, img/catalog-post-desktop@2x.webp 2x ">
+
+              <!--1x: 300x400 px 2x: 600x800 px-->
+              <img width="300" height="400" src="img/catalog-post-desktop.jpg" srcset="img/catalog-post-desktop@2x.jpg 2x" alt="Фотография заснеженной догоги">
+            </picture>
+          </div>
+          <div class="user-post__field">
+            <input class="visually-hidden" type="file" id="photo" name="photo" accept="image/png, image/jpeg">
+            <label class="user-post__upload-photo" for="photo" aria-label="Загрузить фото"></label>
+          </div>
+        </div>
+
+        <div class="user-post__settings">
+          <ul class="user-post__list-buttons-settings">
+            <li class="user-post__item-button-setting">
+              <button class="user-post__button-setting user-post__button-setting--clip user-post__button-setting--active user-post__button-setting--nojs" aria-label="Переключиться на настройку обрезки фотографии">
+                <svg width="44" height="44" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite_auto.svg#icon-clip"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="user-post__item-button-setting">
+              <button class="user-post__button-setting user-post__button-setting--fill user-post__button-setting--nojs" aria-label="Переключиться на настройку заливки фотографии цветом">
+                <svg width="48" height="43" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite_auto.svg#icon-fill"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="user-post__item-button-setting">
+              <button class="user-post__button-setting user-post__button-setting--contrast user-post__button-setting--nojs" aria-label="Переключиться на настройку  контрастности">
+                <svg width="32" height="32" aria-hidden="true" focusable="false">
+                  <use xlink:href="img/sprite_auto.svg#icon-contrast"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+          <ul class="user-post__list-settings">
+            <li class="user-post__item-setting user-post__item-setting--active ">
+              <input id="clip" type="range" min="0" max="100" value="85" name="clip">
+              <label class="visually-hidden" for="clip">Отрегулировать степень обрезки фото</label>
+            </li>
+            <li class="user-post__item-setting">
+              <input id="fill" type="range" min="0" max="100" value="14" name="fill">
+              <label class="visually-hidden" for="fill">Отрегулировать заливку цветом</label>
+            </li>
+            <li class="user-post__item-setting">
+              <input id="contrast" type="range" min="0" max="100" value="50" name="contrast">
+              <label class="visually-hidden" for="contrast">Отрегулировать контрастность</label>
+            </li>
+          </ul>
+          <div class="user-post__buttons">
+            <button class="user-post__button user-post__button--post" type="submit">Запостить</button>
+            <button class="user-post__button user-post__button--reset" type="reset">Отмена</button>
+          </div>
+        </div>
+      </form>
+
+    </section>
   </main>
   <footer class="page-footer">
     <a class="page-footer__logo-link" href="index.html" aria-label="Перейти на главную страницу">
