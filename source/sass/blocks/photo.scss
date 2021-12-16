@@ -326,6 +326,11 @@
   fill: $crimson;
 }
 
+.photo__button-like--active svg {
+  transform: scale(1.3);
+  fill: $crimson-dark;
+}
+
 //СТАЙЛГАЙД
 //hover
 .photo__button-like:hover,
