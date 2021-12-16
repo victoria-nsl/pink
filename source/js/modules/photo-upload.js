@@ -1,24 +1,28 @@
 const FILE_TYPES = ['gif', 'jpg', 'jpeg', 'png'];
 
-const formPhoto = document.querySelector('.user-post__form');
-const fileChooser = formPhoto.querySelector('#photo');
-const photoChooser = formPhoto.querySelector('.user-post__wrapper-image img');
+const blockUploadPhoto = document.querySelector('.user-post__upload');
+const fileChooser = blockUploadPhoto.querySelector('#photo');
+const preview = blockUploadPhoto.querySelector('.user-post__wrapper-image img');
 
-const uploadPhoto = (fileUser,photoUser) => {
+const uploadPhoto = (fileUser) => {
   const file = fileUser.files[0];
   const fileName = file.name.toLowerCase();
 
   const matches = FILE_TYPES.some((it) => fileName.endsWith(it));
+
   if (matches) {
     const reader = new FileReader();
 
     reader.addEventListener('load', () => {
-      photoUser.src = reader.result;
+      preview.src = reader.result;
     });
+
     reader.readAsDataURL(file);
   }
 };
 
-fileChooser.addEventListener('change', () => {
-  uploadPhoto(fileChooser, photoChooser);
-});
+if (blockUploadPhoto) {
+  fileChooser.addEventListener('change', () => {
+    uploadPhoto(fileChooser);
+  });
+}

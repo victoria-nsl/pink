@@ -867,6 +867,8 @@ img {
       padding: 20px 0 41px 0; } }
 
 .user-post__upload {
+  position: relative;
+  display: flex;
   width: 300px; }
   @media (max-width: 1023px) {
     .user-post__upload {
@@ -886,6 +888,23 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover; }
+
+.user-post__field {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  @media (max-width: 659px) {
+    .user-post__field {
+      left: 20px; } }
+
+.user-post__field input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer; }
 
 .user-post__settings {
   display: flex;

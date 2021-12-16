@@ -283,18 +283,12 @@
 
         <div class="user-post__upload">
           <div class="user-post__wrapper-image">
-            <picture>
-              <source type="image/webp" media="(max-width: 659px)" srcset="img/catalog-post-mobile.webp 1x, img/catalog-post-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/catalog-post-tablet.webp 1x, img/catalog-post-tablet@2x.webp 2x">
-              <source type="image/webp"  media="(min-width: 1024px)" srcset="img/catalog-post-desktop.webp 1x, img/catalog-post-desktop@2x.webp 2x ">
-
-              <!--1x: 300x400 px 2x: 600x800 px-->
-              <img width="300" height="400" src="img/catalog-post-desktop.jpg" srcset="img/catalog-post-desktop@2x.jpg 2x" alt="Фотография заснеженной догоги">
-            </picture>
+            <!--1x: 300x400 px 2x: 600x800 px-->
+            <img width="300" height="400" src="img/catalog-post-desktop.jpg" srcset="img/catalog-post-desktop@2x.jpg 2x" alt="Фотография заснеженной догоги">
           </div>
           <div class="user-post__field">
-            <input class="visually-hidden" type="file" id="photo" name="photo" accept="image/png, image/jpeg">
-            <label class="user-post__upload-photo" for="photo" aria-label="Загрузить фото"></label>
+            <input  type="file" id="photo" name="photo" accept="image/png, image/jpeg">
+            <label class="visually-hidden" for="photo" aria-label="Загрузить фото"></label>
           </div>
         </div>
 
