@@ -806,6 +806,19 @@ img {
   height: 12px;
   fill: #d22856; }
 
+.photo__button-like:hover,
+.photo__image-link:hover {
+  opacity: 0.8; }
+
+.photo__button-like:focus,
+.photo__image-link:focus {
+  outline: 2px solid #8da399; }
+
+.photo__button-like:active,
+.photo__image-link:active {
+  outline: none;
+  opacity: 0.3; }
+
 .user-post {
   margin-bottom: 28px; }
   @media (max-width: 1023px) {
@@ -928,6 +941,17 @@ img {
   padding: 0;
   border: none;
   background-color: transparent; }
+  @media (max-width: 659px) {
+    .user-post__button-setting {
+      cursor: pointer; } }
+
+@media (max-width: 659px) {
+  .user-post__button-setting--active {
+    cursor: default; } }
+
+@media (max-width: 659px) {
+  .user-post__button-setting--nojs {
+    cursor: default; } }
 
 .user-post__button-setting svg {
   fill: #d22856; }
@@ -937,6 +961,10 @@ img {
 
 @media (max-width: 659px) {
   .user-post__button-setting--active svg {
+    fill: #d22856; } }
+
+@media (max-width: 659px) {
+  .user-post__button-setting--nojs svg {
     fill: #d22856; } }
 
 .user-post__button-setting--clip svg {
@@ -1006,6 +1034,9 @@ img {
 @media (max-width: 659px) {
   .user-post__item-setting--active {
     display: flex; } }
+
+.user-post__item-setting--nojs {
+  display: flex; }
 
 .user-post__item-setting:not(:last-child) {
   border-bottom: 1px solid rgba(40, 54, 69, 0.1); }
@@ -1082,19 +1113,70 @@ img {
     .user-post__button {
       width: 100%; } }
 
-@media (max-width: 1023px) {
-  .user-post__button:first-child {
-    margin-bottom: 24px; } }
-
-@media (max-width: 659px) {
-  .user-post__button:first-child {
-    margin-bottom: 13px; } }
-
 .user-post__button--post {
   color: #d22856;
   border: 3px solid #d22856; }
+  @media (max-width: 1023px) {
+    .user-post__button--post {
+      margin-bottom: 24px; } }
+  @media (max-width: 659px) {
+    .user-post__button--post {
+      margin-bottom: 13px; } }
 
 .user-post__button--reset {
-  color: #283645;
-  opacity: 0.1;
-  border: 3px solid #283645; }
+  color: rgba(40, 54, 69, 0.1);
+  border: 3px solid rgba(40, 54, 69, 0.1); }
+
+.user-post__button--post:hover {
+  color: #ffffff;
+  background-color: #d22856; }
+
+.user-post__button--reset:hover {
+  color: rgba(40, 54, 69, 0.3);
+  border: 3px solid rgba(40, 54, 69, 0.3); }
+
+.user-post__item-setting input:hover::-webkit-slider-thumb,
+.user-post__item-setting input:hover::-webkit-slider-thumb {
+  border: 2px solid rgba(210, 40, 86, 0.8); }
+
+@media (max-width: 659px) {
+  .user-post__button-setting:hover svg {
+    fill: rgba(40, 54, 69, 0.5); } }
+
+@media (max-width: 659px) {
+  .user-post__button-setting--nojs:hover svg,
+  .user-post__button-setting--active:hover svg {
+    fill: #d22856; } }
+
+.user-post__button:focus,
+.user-post__item-setting input:focus::-webkit-slider-thumb,
+.user-post__item-setting input:focus::-webkit-slider-thumb {
+  outline: 2px solid #8da399; }
+
+@media (max-width: 659px) {
+  .user-post__button-setting:focus {
+    outline: 2px solid #8da399; } }
+
+@media (max-width: 659px) {
+  .user-post__button-setting--active:focus,
+  .user-post__button-setting--nojs:focus {
+    outline: none; } }
+
+.user-post__button--post:active {
+  outline: none;
+  opacity: 0.3; }
+
+.user-post__button--reset:active {
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(40, 54, 69, 0.3);
+  border: 3px solid rgba(40, 54, 69, 0); }
+
+.user-post__item-setting input:active::-webkit-slider-thumb,
+.user-post__item-setting input:active::-webkit-slider-thumb {
+  background-color: #d22856;
+  outline: none; }
+
+@media (max-width: 659px) {
+  .user-post__button-setting:not(.user-post__button-setting--active):active {
+    outline: none; } }

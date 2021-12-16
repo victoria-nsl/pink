@@ -325,3 +325,24 @@
 
   fill: $crimson;
 }
+
+//СТАЙЛГАЙД
+//hover
+.photo__button-like:hover,
+.photo__image-link:hover {
+  opacity: 0.8;
+}
+
+
+//focus
+.photo__button-like:focus,
+.photo__image-link:focus {
+  outline: 2px solid $grey-focus;
+}
+
+//active
+.photo__button-like:active,
+.photo__image-link:active {
+  outline: none;
+  opacity: 0.3;
+}

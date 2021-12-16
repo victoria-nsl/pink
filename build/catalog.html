@@ -301,21 +301,21 @@
         <div class="user-post__settings">
           <ul class="user-post__list-buttons-settings">
             <li class="user-post__item-button-setting">
-              <button class="user-post__button-setting user-post__button-setting--clip user-post__button-setting--active user-post__button-setting--nojs" aria-label="Переключиться на настройку обрезки фотографии">
+              <button class="user-post__button-setting user-post__button-setting--clip user-post__button-setting--active user-post__button-setting--nojs" type="button" aria-label="Переключиться на настройку обрезки фотографии">
                 <svg width="44" height="44" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite_auto.svg#icon-crop"></use>
                 </svg>
               </button>
             </li>
             <li class="user-post__item-button-setting">
-              <button class="user-post__button-setting user-post__button-setting--fill user-post__button-setting--nojs" aria-label="Переключиться на настройку заливки фотографии цветом">
+              <button class="user-post__button-setting user-post__button-setting--fill user-post__button-setting--nojs" type="button" aria-label="Переключиться на настройку заливки фотографии цветом">
                 <svg width="48" height="43" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite_auto.svg#icon-fill-photo"></use>
                 </svg>
               </button>
             </li>
             <li class="user-post__item-button-setting">
-              <button class="user-post__button-setting user-post__button-setting--contrast user-post__button-setting--nojs" aria-label="Переключиться на настройку  контрастности">
+              <button class="user-post__button-setting user-post__button-setting--contrast user-post__button-setting--nojs" type="button" aria-label="Переключиться на настройку  контрастности">
                 <svg width="32" height="32" aria-hidden="true" focusable="false">
                   <use xlink:href="img/sprite_auto.svg#icon-contrast-photo"></use>
                 </svg>
@@ -323,15 +323,15 @@
             </li>
           </ul>
           <ul class="user-post__list-settings">
-            <li class="user-post__item-setting user-post__item-setting--active ">
+            <li class="user-post__item-setting user-post__item-setting--active user-post__item-setting--nojs">
               <input id="clip" type="range" min="0" max="100" value="85" name="clip">
               <label class="visually-hidden" for="clip">Отрегулировать степень обрезки фото</label>
             </li>
-            <li class="user-post__item-setting">
+            <li class="user-post__item-setting user-post__item-setting--nojs ">
               <input id="fill" type="range" min="0" max="100" value="14" name="fill">
               <label class="visually-hidden" for="fill">Отрегулировать заливку цветом</label>
             </li>
-            <li class="user-post__item-setting">
+            <li class="user-post__item-setting user-post__item-setting--nojs">
               <input id="contrast" type="range" min="0" max="100" value="50" name="contrast">
               <label class="visually-hidden" for="contrast">Отрегулировать контрастность</label>
             </li>
