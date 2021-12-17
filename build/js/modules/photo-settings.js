@@ -51,5 +51,3 @@ if (formSetting) {
     });
   }
 }
-
-
