@@ -1,4 +1,13 @@
+const currentWidth = window.innerWidth;
+
 window.addEventListener('resize', () => {
-  window.location.reload();
+  if (window.innerWidth >= 660 && currentWidth < 660) {
+    location.reload();
+  }
+
+  if (window.innerWidth < 660 && currentWidth >= 660) {
+    location.reload();
+  }
 });
+
 
