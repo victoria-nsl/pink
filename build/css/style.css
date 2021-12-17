@@ -897,7 +897,8 @@ img {
   bottom: 0; }
   @media (max-width: 659px) {
     .user-post__field {
-      left: 20px; } }
+      left: 20px;
+      right: 20px; } }
 
 .user-post__field input {
   display: block;
@@ -963,32 +964,21 @@ img {
 .user-post__button-setting {
   padding: 0;
   border: none;
-  background-color: transparent; }
-  @media (max-width: 659px) {
-    .user-post__button-setting {
-      cursor: pointer; } }
+  background-color: transparent;
+  cursor: pointer; }
 
-@media (max-width: 659px) {
-  .user-post__button-setting--active {
-    cursor: default; } }
-
-@media (max-width: 659px) {
-  .user-post__button-setting--nojs {
-    cursor: default; } }
+.user-post__button-setting--active,
+.user-post__button-setting--nojs {
+  cursor: default; }
 
 .user-post__button-setting svg {
+  fill: rgba(40, 54, 69, 0.3); }
+
+.user-post__button-setting--active svg {
   fill: #d22856; }
-  @media (max-width: 659px) {
-    .user-post__button-setting svg {
-      fill: rgba(40, 54, 69, 0.3); } }
 
-@media (max-width: 659px) {
-  .user-post__button-setting--active svg {
-    fill: #d22856; } }
-
-@media (max-width: 659px) {
-  .user-post__button-setting--nojs svg {
-    fill: #d22856; } }
+.user-post__button-setting--nojs svg {
+  fill: #d22856; }
 
 .user-post__button-setting--clip svg {
   width: 44px;
@@ -1043,20 +1033,18 @@ img {
       margin-bottom: 40px; } }
 
 .user-post__item-setting {
+  display: none; }
+
+.user-post__item-setting--active {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 71px;
   padding-left: 10px; }
   @media (max-width: 659px) {
-    .user-post__item-setting {
-      display: none;
+    .user-post__item-setting--active {
       width: 100%;
       padding-left: 0; } }
-
-@media (max-width: 659px) {
-  .user-post__item-setting--active {
-    display: flex; } }
 
 .user-post__item-setting--nojs {
   display: flex; }
@@ -1072,7 +1060,6 @@ img {
   appearance: none;
   width: 288px;
   height: 2px;
-  outline: none;
   background-color: #283645; }
   @media (max-width: 1023px) {
     .user-post__item-setting input {
@@ -1162,28 +1149,27 @@ img {
 .user-post__item-setting input:hover::-moz-range-thumb {
   border: 2px solid rgba(210, 40, 86, 0.8); }
 
-@media (max-width: 659px) {
-  .user-post__button-setting:hover svg {
-    fill: rgba(40, 54, 69, 0.5); } }
+.user-post__button-setting:hover svg {
+  fill: rgba(40, 54, 69, 0.5); }
 
-@media (max-width: 659px) {
-  .user-post__button-setting--nojs:hover svg,
-  .user-post__button-setting--active:hover svg {
-    fill: #d22856; } }
+.user-post__button-setting--nojs:hover svg,
+.user-post__button-setting--active:hover svg {
+  fill: #d22856; }
+
+.user-post__upload:hover img {
+  box-shadow: 0 0 5px 2px #000000; }
 
 .user-post__button:focus,
-.user-post__item-setting input:focus::-webkit-slider-thumb,
-.user-post__item-setting input:focus::-moz-range-thumb {
+.user-post__item-setting input:focus,
+.user-post__upload input:focus {
   outline: 2px solid #8da399; }
 
-@media (max-width: 659px) {
-  .user-post__button-setting:focus {
-    outline: 2px solid #8da399; } }
+.user-post__button-setting:focus {
+  outline: 2px solid #8da399; }
 
-@media (max-width: 659px) {
-  .user-post__button-setting--active:focus,
-  .user-post__button-setting--nojs:focus {
-    outline: none; } }
+.user-post__button-setting--active:focus,
+.user-post__button-setting--nojs:focus {
+  outline: none; }
 
 .user-post__button--post:active {
   outline: none;
@@ -1200,6 +1186,6 @@ img {
   background-color: #d22856;
   outline: none; }
 
-@media (max-width: 659px) {
-  .user-post__button-setting:not(.user-post__button-setting--active):active {
-    outline: none; } }
+.user-post__button-setting:not(.user-post__button-setting--active):active,
+.user-post__item-setting input:active {
+  outline: none; }
