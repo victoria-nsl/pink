@@ -900,11 +900,10 @@ img {
       left: 20px;
       right: 20px; } }
 
-.user-post__field input {
+.user-post__label-upload {
   display: block;
   width: 100%;
   height: 100%;
-  opacity: 0;
   cursor: pointer; }
 
 .user-post__settings {
@@ -1156,16 +1155,17 @@ img {
 .user-post__button-setting--active:hover svg {
   fill: #d22856; }
 
-.user-post__upload:hover img {
+.user-post__field input:hover ~ .user-post__label-upload {
   box-shadow: 0 0 5px 2px #000000; }
 
 .user-post__button:focus,
 .user-post__item-setting input:focus,
-.user-post__upload input:focus {
-  outline: 2px solid #8da399; }
-
 .user-post__button-setting:focus {
   outline: 2px solid #8da399; }
+
+.user-post__field input:focus ~ .user-post__label-upload {
+  outline: 2px solid #8da399;
+  box-shadow: none; }
 
 .user-post__button-setting--active:focus,
 .user-post__button-setting--nojs:focus {
