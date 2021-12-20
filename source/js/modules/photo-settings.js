@@ -1,10 +1,12 @@
+import {reloadBrowser} from './util.js';
+
 const WIDTH_TABLET = 660;
 
 const page = document.body;
 const formSetting = document.querySelector('.user-post__form');
-const switchesSetting =formSetting.querySelectorAll('.user-post__button-setting');
-const settings =formSetting.querySelectorAll('.user-post__item-setting');
-
+const switchesSetting =document.querySelectorAll('.user-post__button-setting');
+const settings =document.querySelectorAll('.user-post__item-setting');
+const currentWidth = window.innerWidth;
 
 const changeSetting = (button, counter) => {
   settings.forEach((setting) => {
@@ -50,4 +52,8 @@ if (formSetting) {
       });
     });
   }
+
+  window.addEventListener('resize', () => {
+    reloadBrowser(currentWidth, WIDTH_TABLET);
+  });
 }

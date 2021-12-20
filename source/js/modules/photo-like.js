@@ -1,6 +1,6 @@
 const blockPhoto = document.querySelector('.photo');
-const buttonsLike = blockPhoto.querySelectorAll('.photo__button-like');
-const numbersLike = blockPhoto.querySelectorAll('.photo__like span');
+const buttonsLike = document.querySelectorAll('.photo__button-like');
+const numbersLike = document.querySelectorAll('.photo__like span');
 
 
 const showLike = (button, counter) => {

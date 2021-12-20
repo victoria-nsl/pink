@@ -588,11 +588,11 @@ img {
 .photo__photos-small {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   width: 940px;
   margin: 0 auto; }
   @media (max-width: 1023px) {
     .photo__photos-small {
+      justify-content: space-between;
       width: 100%;
       padding: 0 3%;
       box-sizing: border-box; } }
@@ -621,6 +621,12 @@ img {
   @media (max-width: 659px) {
     .photo__figure--small {
       width: 100%; } }
+
+.photo__figure--small:not(:nth-child(3n)) {
+  margin-right: 20px; }
+  @media (max-width: 1023px) {
+    .photo__figure--small:not(:nth-child(3n)) {
+      margin-right: 0; } }
 
 .photo__image-link {
   position: relative;
@@ -738,6 +744,10 @@ img {
   font-size: 14px;
   line-height: 24px;
   color: #283645; }
+
+.photo__blockquote--big cite {
+  display: block;
+  width: 140px; }
 
 .photo__blockquote time {
   margin-left: 3px;
@@ -1146,8 +1156,10 @@ img {
   color: rgba(40, 54, 69, 0.3);
   border: 3px solid rgba(40, 54, 69, 0.3); }
 
-.user-post__item-setting input:hover::-webkit-slider-thumb,
 .user-post__item-setting input:hover::-moz-range-thumb {
+  border: 2px solid rgba(210, 40, 86, 0.8); }
+
+.user-post__item-setting input:hover::-webkit-slider-thumb {
   border: 2px solid rgba(210, 40, 86, 0.8); }
 
 .user-post__button-setting:hover svg {
@@ -1161,7 +1173,6 @@ img {
   box-shadow: 0 0 5px 2px #000000; }
 
 .user-post__button:focus,
-.user-post__item-setting input:focus,
 .user-post__button-setting:focus {
   outline: 2px solid #8da399; }
 
@@ -1173,6 +1184,12 @@ img {
 .user-post__button-setting--nojs:focus {
   outline: none; }
 
+.user-post__item-setting input:focus::-moz-range-thumb {
+  outline: 2px solid #8da399; }
+
+.user-post__item-setting input:focus::-webkit-slider-thumb {
+  outline: 2px solid #8da399; }
+
 .user-post__button--post:active {
   outline: none;
   opacity: 0.3; }
@@ -1183,7 +1200,10 @@ img {
   background-color: rgba(40, 54, 69, 0.3);
   border: 3px solid rgba(40, 54, 69, 0); }
 
-.user-post__item-setting input:active::-webkit-slider-thumb,
+.user-post__item-setting input:active::-webkit-slider-thumb {
+  background-color: #d22856;
+  outline: none; }
+
 .user-post__item-setting input:active::-moz-range-thumb {
   background-color: #d22856;
   outline: none; }

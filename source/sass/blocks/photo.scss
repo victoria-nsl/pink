@@ -38,12 +38,12 @@
 .photo__photos-small {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 
   width: 940px;
   margin: 0 auto;
 
   @media (max-width: $tablet-max-width) {
+    justify-content: space-between;
     width: 100%;
     padding: 0 3%;
     box-sizing: border-box;
@@ -79,6 +79,14 @@
 
   @media (max-width: $mobile-max-width) {
     width: 100%;
+  }
+}
+
+.photo__figure--small:not(:nth-child(3n)) {
+  margin-right: 20px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-right: 0;
   }
 }
 
@@ -231,6 +239,11 @@
   font-size: 14px;
   line-height: 24px;
   color: $black-text;
+}
+
+.photo__blockquote--big cite {
+  display: block;
+  width: 140px;
 }
 
 .photo__blockquote time {

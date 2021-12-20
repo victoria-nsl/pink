@@ -1,13 +1,11 @@
-const currentWidth = window.innerWidth;
-
-window.addEventListener('resize', () => {
-  if (window.innerWidth >= 660 && currentWidth < 660) {
+const reloadBrowser = (widthStart,  widthWindowReload) => {
+  if (window.innerWidth >= widthWindowReload && widthStart < widthWindowReload) {
     location.reload();
   }
 
-  if (window.innerWidth < 660 && currentWidth >= 660) {
+  if (window.innerWidth <  widthWindowReload && widthStart >=  widthWindowReload) {
     location.reload();
   }
-});
+};
 
-
+export {reloadBrowser};

@@ -1,8 +1,8 @@
 const FILE_TYPES = ['gif', 'jpg', 'jpeg', 'png'];
 
 const blockUploadPhoto = document.querySelector('.user-post__upload');
-const fileChooser = blockUploadPhoto.querySelector('#photo');
-const preview = blockUploadPhoto.querySelector('.user-post__wrapper-image img');
+const fileChooser = document.querySelector('#photo');
+const preview = document.querySelector('.user-post__wrapper-image img');
 
 const uploadPhoto = (fileUser) => {
   const file = fileUser.files[0];

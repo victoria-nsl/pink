@@ -413,8 +413,11 @@
   border: 3px solid rgba($black-text, 0.3);
 }
 
-.user-post__item-setting input:hover::-webkit-slider-thumb,
 .user-post__item-setting input:hover::-moz-range-thumb {
+  border: 2px solid rgba($crimson, 0.8);
+}
+
+.user-post__item-setting input:hover::-webkit-slider-thumb {
   border: 2px solid rgba($crimson, 0.8);
 }
 
@@ -433,7 +436,6 @@
 
 //focus
 .user-post__button:focus,
-.user-post__item-setting input:focus,
 .user-post__button-setting:focus {
   outline: 2px solid $grey-focus;
 }
@@ -446,6 +448,14 @@
 .user-post__button-setting--active:focus,
 .user-post__button-setting--nojs:focus {
   outline: none;
+}
+
+.user-post__item-setting input:focus::-moz-range-thumb {
+  outline: 2px solid $grey-focus;
+}
+
+.user-post__item-setting input:focus::-webkit-slider-thumb {
+  outline: 2px solid $grey-focus;
 }
 
 //active
@@ -461,7 +471,11 @@
   border: 3px solid rgba($black-text, 0);
 }
 
-.user-post__item-setting input:active::-webkit-slider-thumb,
+.user-post__item-setting input:active::-webkit-slider-thumb {
+  background-color: $crimson;
+  outline: none;
+}
+
 .user-post__item-setting input:active::-moz-range-thumb {
   background-color: $crimson;
   outline: none;
