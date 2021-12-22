@@ -81,7 +81,8 @@ img {
       background-image: url("../img/header-back-mobile@2x.jpg"); } }
 
 .page-header--index {
-  background-position: center; }
+  background-position: center;
+  margin-bottom: 62px; }
 
 .page-header--catalog {
   background-position: center top;
@@ -119,14 +120,14 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
-  width: 100%;
+  width: 940px;
   margin: 0 auto;
-  padding: 27px 130px 21px 130px;
+  padding: 27px 0 21px 0;
   box-sizing: border-box; }
   @media (max-width: 1023px) {
     .page-header__navigation {
       display: block;
+      width: 100%;
       padding: 0; } }
 
 @media (max-width: 1023px) {
@@ -384,9 +385,12 @@ img {
   line-height: 68px;
   text-align: center;
   color: #ffffff; }
+  @media (max-width: 1023px) {
+    .main-screen--catalog h1 {
+      width: 54.2%; } }
   @media (max-width: 659px) {
     .main-screen--catalog h1 {
-      width: 172px;
+      width: 53.75%;
       font-weight: 300;
       font-size: 24px;
       line-height: 33px; } }
@@ -396,7 +400,7 @@ img {
   width: 100%;
   margin: 0 auto;
   padding-top: 98px;
-  padding-left: 130px;
+  padding-left: 10.8%;
   box-sizing: border-box; }
   @media (max-width: 1023px) {
     .main-screen--index {
@@ -699,15 +703,18 @@ img {
 
 .page-footer__social-link--twitter svg {
   width: 18px;
-  height: 14px; }
+  height: 14px;
+  fill: #d22856; }
 
 .page-footer__social-link--facebook svg {
   width: 9px;
-  height: 18px; }
+  height: 18px;
+  fill: #d22856; }
 
 .page-footer__social-link--youtube svg {
   width: 15px;
-  height: 13px; }
+  height: 13px;
+  fill: #d22856; }
 
 .page-footer__htmlacademy-link {
   display: flex;
@@ -764,6 +771,133 @@ img {
 .page-footer__logo-link[href]:active svg {
   fill: #283645;
   opacity: 0.3; }
+
+.benefits {
+  margin-bottom: 72px; }
+
+.benefits__wrapper-text {
+  margin-bottom: 57px;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 68px;
+  text-align: center;
+  color: #283645; }
+
+.benefits__wrapper-text p {
+  margin: 0; }
+
+.benefits__wrapper-lists {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/background-grey-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.benefits__list-images {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  order: 1;
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+  box-sizing: border-box; }
+
+.benefits__item-image {
+  width: 300px;
+  text-align: center; }
+
+.benefits__item-image:not(:nth-child(3n)) {
+  margin-right: 20px; }
+
+.benefits__list-descriptions {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  order: 2;
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+  margin-top: -88px;
+  background-color: #f2f2f2; }
+
+.benefits__item-description {
+  width: 300px;
+  padding: 59px 24px 49px 24px;
+  box-sizing: border-box;
+  text-align: center; }
+
+.benefits__item-description:not(:nth-child(3n)) {
+  margin-right: 20px; }
+
+.benefits__item-description h3 {
+  width: 240px;
+  margin: 0 auto;
+  margin-bottom: 23px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000; }
+
+.benefits__item-description p {
+  width: 240px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #283645; }
+
+.benefits__effect {
+  background-color: #f2f2f2; }
+
+.benefits__inner-effect {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+  padding: 112px 0 112px 369px;
+  box-sizing: border-box; }
+
+.benefits__inner-effect::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 0;
+  width: 298px;
+  height: 345px;
+  background-image: url("../img/back-icon-timer.svg");
+  background-repeat: no-repeat;
+  background-position: start center;
+  background-size: cover; }
+
+.benefits__inner-effect h3 {
+  width: 298px;
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000; }
+
+.benefits__inner-effect p {
+  width: 93.5%;
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645; }
+
+.benefits__effect-link {
+  display: block;
+  width: 290px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: underline;
+  color: #d22856; }
 
 .photo {
   margin-bottom: 4px; }

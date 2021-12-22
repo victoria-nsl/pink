@@ -1,0 +1,158 @@
+.benefits {
+  margin-bottom: 72px;
+}
+
+.benefits__wrapper-text {
+  margin-bottom: 57px;
+
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 68px;
+  text-align: center;
+  color: $black-text;
+}
+
+.benefits__wrapper-text p {
+  margin: 0;
+}
+
+.benefits__wrapper-lists {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  background-image: url("../img/background-grey-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.benefits__list-images {
+  @include reset-style-list;
+
+  order: 1;
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.benefits__item-image {
+  width: 300px;
+  text-align: center;
+}
+
+.benefits__item-image:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
+
+
+.benefits__list-descriptions {
+  @include reset-style-list;
+
+  order: 2;
+  display: flex;
+
+  width: 940px;
+  margin: 0 auto;
+  margin-top: -88px;
+
+  background-color: $grey;
+}
+
+.benefits__item-description {
+  width: 300px;
+  padding: 59px 24px 49px 24px;
+
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.benefits__item-description:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
+
+.benefits__item-description h3 {
+  width: 240px;
+  margin: 0 auto;
+  margin-bottom: 23px;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: $black;
+}
+
+.benefits__item-description p {
+  width: 240px;
+  margin: 0 auto;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: $black-text;
+}
+
+.benefits__effect {
+  background-color: $grey;
+}
+
+.benefits__inner-effect {
+  position: relative;
+
+
+  width: 940px;
+  margin: 0 auto;
+  padding: 112px 0 112px 369px;
+  box-sizing: border-box;
+}
+
+.benefits__inner-effect::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 0;
+
+  width: 298px;
+  height: 345px;
+
+  background-image: url("../img/back-icon-timer.svg");
+  background-repeat: no-repeat;
+  background-position: start center;
+  background-size: cover;
+}
+
+.benefits__inner-effect h3 {
+  width: 298px;
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  color: $black;
+}
+
+.benefits__inner-effect p {
+  width: 93.5%;
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $black-text;
+}
+
+.benefits__effect-link {
+  display: block;
+  width: 290px;
+
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: underline;
+  color: $crimson;
+}

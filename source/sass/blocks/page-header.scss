@@ -27,6 +27,7 @@
 
 .page-header--index {
   background-position: center;
+  margin-bottom: 62px;
 }
 
 .page-header--catalog {
@@ -79,14 +80,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
-  width: 100%;
+  width: 940px;
   margin: 0 auto;
-  padding: 27px 130px 21px 130px;
+  padding: 27px 0 21px 0;
   box-sizing: border-box;
 
   @media (max-width: $tablet-max-width) {
     display: block;
+    width: 100%;
     padding: 0;
   }
 }

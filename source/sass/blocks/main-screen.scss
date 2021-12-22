@@ -23,8 +23,12 @@
   text-align: center;
   color: $white;
 
+  @media (max-width: $tablet-max-width) {
+    width: 54.2%;
+  }
+
   @media (max-width: $mobile-max-width) {
-    width: 172px;
+    width: 53.75%;
 
     font-weight: 300;
     font-size: 24px;
@@ -37,7 +41,7 @@
   width: 100%;
   margin: 0 auto;
   padding-top: 98px;
-  padding-left: 130px;
+  padding-left: 10.8%;
   box-sizing: border-box;
 
   @media (max-width: $tablet-max-width) {
