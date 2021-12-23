@@ -28,6 +28,14 @@
 .page-header--index {
   background-position: center;
   margin-bottom: 62px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 41px;
+  }
 }
 
 .page-header--catalog {
