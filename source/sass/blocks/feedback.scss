@@ -157,6 +157,9 @@
   font-size: 0;
   background-color: transparent;
   border: none;
+
+  opacity: 0.3;
+  cursor: pointer;
 }
 
 .feedback .slick-prev {
@@ -182,7 +185,7 @@
 }
 
 .feedback .slick-dots li {
-  margin: 0 10px 0 8px ;
+  margin: 0 10px 0 8px;
 }
 
 .feedback .slick-dots button {
@@ -196,6 +199,7 @@
   opacity: 0.5;
   border-radius: 50%;
   border: none;
+  cursor: pointer;
 }
 
 .feedback .slick-dots li.slick-active button {
@@ -208,4 +212,25 @@
   opacity: 1;
   border-radius: 50%;
   background-color: transparent;
+}
+
+//СТАЙЛГАЙД
+//hover
+.feedback .slick-arrow:hover,
+.feedback .slick-dots button:hover {
+  opacity: 0.6;
+}
+
+//focus
+.feedback .slick-arrow:focus,
+.feedback .slick-dots button:focus {
+  outline: 2px solid $grey-focus;
+  opacity: 0.6;
+}
+
+//active
+.feedback .slick-arrow:active,
+.feedback .slick-dots button:active {
+  outline: none;
+  opacity: 0.1;
 }

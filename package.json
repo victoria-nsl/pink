@@ -51,8 +51,5 @@
   },
   "dependencies": {
     "del": "^4.1.1"
-  },
-  "eslintIgnore": [
-    "vendor.js"
-  ]
+  }
 }
