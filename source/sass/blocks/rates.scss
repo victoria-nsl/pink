@@ -68,6 +68,11 @@
 
   @media (max-width: $mobile-max-width) {
     width: 262.5vw;
+  }
+}
+
+.rates__table--nojs {
+  @media (max-width: $mobile-max-width) {
     transform: translateX(-31%);
   }
 }

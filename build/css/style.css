@@ -1323,8 +1323,11 @@ img {
       width: 94%; } }
   @media (max-width: 659px) {
     .rates__table {
-      width: 262.5vw;
-      transform: translateX(-31%); } }
+      width: 262.5vw; } }
+
+@media (max-width: 659px) {
+  .rates__table--nojs {
+    transform: translateX(-31%); } }
 
 .rates__heading {
   width: 25%;
