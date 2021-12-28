@@ -1309,6 +1309,7 @@ img {
 @media (max-width: 659px) {
   .rates__wrapper-table {
     width: 100vw;
+    margin: 0 auto;
     margin-bottom: 40px;
     overflow: hidden; } }
 
@@ -1323,11 +1324,13 @@ img {
       width: 94%; } }
   @media (max-width: 659px) {
     .rates__table {
-      width: 262.5vw; } }
+      width: 262.5vw;
+      margin: 0 6.25vw; } }
 
 @media (max-width: 659px) {
-  .rates__table--nojs {
-    transform: translateX(-31%); } }
+  .rates__table--nojs,
+  .rates__table--start {
+    transform: translateX(-33.3%); } }
 
 .rates__heading {
   width: 25%;
