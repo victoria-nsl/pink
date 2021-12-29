@@ -1,6 +1,5 @@
 const page = document.body;
 const menu = document.querySelector('.page-header');
-const navigationToggle = menu.querySelector('.page-header__button');
 
 /*======ОТКРЫТИЕ/ЗАКРЫТИЕ МОБИЛЬНОГО МЕНЮ ============*/
 const closeMenu = () => {
@@ -16,6 +15,8 @@ const openMenu = () => {
 };
 
 if (menu) {
+  const navigationToggle = menu.querySelector('.page-header__button');
+
   menu.classList.remove('page-header--nojs');
   navigationToggle.addEventListener('click', () => {
     if (menu.classList.contains('page-header--closed')) {

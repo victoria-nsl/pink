@@ -1333,9 +1333,12 @@ img {
       margin: 0 6.25vw; } }
 
 @media (max-width: 659px) {
-  .rates__table--nojs,
   .rates__table--start {
     transform: translateX(-33.3%); } }
+
+@media (max-width: 659px) {
+  .rates--nojs .rates__table {
+    transform: translateX(0); } }
 
 .rates__heading {
   width: 25%;
@@ -1482,6 +1485,10 @@ img {
       justify-content: center;
       width: 23.1%;
       margin: 0 auto; } }
+
+@media (max-width: 659px) {
+  .rates--nojs .rates__list-buttons {
+    display: none; } }
 
 @media (max-width: 659px) {
   .rates__item-button {

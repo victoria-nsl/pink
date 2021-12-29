@@ -1,7 +1,5 @@
 const blockPhoto = document.querySelector('.photo');
-const buttonsLike = document.querySelectorAll('.photo__button-like');
 const numbersLike = document.querySelectorAll('.photo__like span');
-
 
 const showLike = (button, counter) => {
   let quantity = +numbersLike[counter].textContent;
@@ -16,6 +14,8 @@ const showLike = (button, counter) => {
 };
 
 if (blockPhoto) {
+  const buttonsLike = blockPhoto.querySelectorAll('.photo__button-like');
+
   buttonsLike.forEach((buttonLike, index) => {
     buttonLike.addEventListener('click', () => {
       showLike(buttonLike, index);

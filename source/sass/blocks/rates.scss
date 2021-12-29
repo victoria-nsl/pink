@@ -81,10 +81,15 @@
   }
 }
 
-.rates__table--nojs,
 .rates__table--start {
   @media (max-width: $mobile-max-width) {
     transform: translateX(-33.3%);
+  }
+}
+
+.rates--nojs .rates__table {
+  @media (max-width: $mobile-max-width) {
+    transform: translateX(0);
   }
 }
 
@@ -272,6 +277,12 @@
     justify-content: center;
     width: 23.1%;
     margin: 0 auto;
+  }
+}
+
+.rates--nojs .rates__list-buttons {
+  @media (max-width: $mobile-max-width) {
+    display: none;
   }
 }
 

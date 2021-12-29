@@ -9,7 +9,7 @@ if (blockRates && page.clientWidth < WIDTH_TABLET) {
   const parentTableRates =  tableRates.offsetParent;
   const numberScrolls = buttonsRates.length;
 
-  tableRates.classList.remove('rates__table--nojs');
+  blockRates.classList.remove('rates--nojs');
 
   //функция, устанавливающая активную кнопку
   const setActiveButtonsRates = (index) => {
