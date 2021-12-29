@@ -1308,10 +1308,15 @@ img {
 
 @media (max-width: 659px) {
   .rates__wrapper-table {
+    position: relative;
     width: 100vw;
     margin: 0 auto;
     margin-bottom: 40px;
-    overflow: hidden; } }
+    overflow: scroll;
+    scrollbar-width: none; }
+    .rates__wrapper-table::-webkit-scrollbar {
+      width: 0;
+      height: 0; } }
 
 .rates__table {
   position: relative;

@@ -47,10 +47,18 @@
 
 .rates__wrapper-table {
   @media (max-width: $mobile-max-width) {
+    position: relative; //для js кода - родительский элемент
+
     width: 100vw;
     margin: 0 auto;
     margin-bottom: 40px;
-    overflow: hidden;
+    overflow: scroll;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
   }
 }
 
