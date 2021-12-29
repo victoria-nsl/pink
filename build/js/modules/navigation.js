@@ -1,3 +1,5 @@
+import {setFocusTab} from './util.js';
+
 const page = document.body;
 const menu = document.querySelector('.page-header');
 
@@ -16,6 +18,13 @@ const openMenu = () => {
 
 if (menu) {
   const navigationToggle = menu.querySelector('.page-header__button');
+  const navigation =  menu.querySelector('.page-header__navigation');
+  const elementsFocusable = navigation.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])');
+
+  const numberElements = elementsFocusable.length;
+  const firstFocusElement = elementsFocusable[0];
+  const lastFocusElement = elementsFocusable[numberElements - 1];
+
 
   menu.classList.remove('page-header--nojs');
   navigationToggle.addEventListener('click', () => {
@@ -24,5 +33,13 @@ if (menu) {
       return;
     }
     closeMenu();
+  });
+
+  firstFocusElement.addEventListener('keydown', (evt) => {
+    setFocusTab(evt, firstFocusElement, lastFocusElement);
+  });
+
+  lastFocusElement.addEventListener('keydown', (evt) => {
+    setFocusTab(evt, firstFocusElement, lastFocusElement);
   });
 }
