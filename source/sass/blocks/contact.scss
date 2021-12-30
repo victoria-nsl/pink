@@ -203,3 +203,23 @@
 
   object-fit: cover;
 }
+
+//СТАЙЛГАЙД
+//hover
+.contact__link:hover {
+  color: $black-text;
+  text-decoration: underline;
+}
+
+//focus
+.contact__link:focus {
+  outline: 2px solid $grey-focus;
+  opacity: 1;
+}
+
+//active
+.contact__link:active {
+  outline: none;
+  opacity: 0.3;
+  text-decoration: none;
+}

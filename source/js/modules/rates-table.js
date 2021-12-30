@@ -10,6 +10,7 @@ if (blockRates && page.clientWidth < WIDTH_TABLET) {
   const numberScrolls = buttonsRates.length;
 
   blockRates.classList.remove('rates--nojs');
+  tableRates.setAttribute('tabindex', '0');
 
   //функция, устанавливающая активную кнопку
   const setActiveButtonsRates = (index) => {

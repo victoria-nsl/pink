@@ -307,7 +307,7 @@
     font-size: 0;
 
     background-color: $black-text;
-    opacity: 0.5;
+    opacity: 0.3;
     border-radius: 50%;
     border: none;
     cursor: pointer;
@@ -326,4 +326,32 @@
     border-radius: 50%;
     background-color: transparent;
   }
+}
+
+//СТАЙЛГАЙД
+//hover
+.rates__button:not(.rates__button--active):hover {
+  opacity: 0.6;
+}
+
+//focus
+.rates__button:focus {
+  outline: 2px solid $grey-focus;
+  opacity: 0.6;
+}
+
+.rates__button--active:focus {
+  opacity: 1;
+}
+
+.rates__table:focus {
+  @media (max-width: $mobile-max-width) {
+    outline: 2px solid $grey-focus;
+  }
+}
+
+//active
+.rates__button:not(.rates__button--active):active {
+  outline: none;
+  opacity: 0.1;
 }

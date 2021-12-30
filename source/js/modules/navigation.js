@@ -1,5 +1,7 @@
 import {setFocusTab} from './util.js';
 
+const WIDTH_DESKTOP = 1023;
+
 const page = document.body;
 const menu = document.querySelector('.page-header');
 
@@ -16,7 +18,7 @@ const openMenu = () => {
   page.classList.add('page-no-scroll');
 };
 
-if (menu) {
+if (menu && page.clientWidth < WIDTH_DESKTOP) {
   const navigationToggle = menu.querySelector('.page-header__button');
   const navigation =  menu.querySelector('.page-header__navigation');
   const elementsFocusable = navigation.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])');
