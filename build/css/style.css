@@ -854,6 +854,7 @@ img {
   list-style: none;
   order: 1;
   display: flex;
+  flex-wrap: wrap;
   width: 940px;
   margin: 0 auto;
   box-sizing: border-box; }
@@ -902,6 +903,7 @@ img {
   list-style: none;
   order: 2;
   display: flex;
+  flex-wrap: wrap;
   width: 940px;
   margin: 0 auto;
   margin-top: -88px;
@@ -1290,7 +1292,7 @@ img {
   @media (max-width: 659px) {
     .rates {
       padding-top: 123px;
-      padding-bottom: 45px;
+      padding-bottom: 37px;
       margin-bottom: 40px; } }
 
 .rates::before {
@@ -1299,18 +1301,17 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 534px;
+  height: 99%;
   background-image: url("../img/background-grey-2-desktop.svg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover; }
   @media (max-width: 1023px) {
     .rates::before {
-      height: 400px;
       background-image: url("../img/background-grey-2-tablet.svg"); } }
   @media (max-width: 659px) {
     .rates::before {
-      height: 506px;
+      height: 100%;
       background-image: url("../img/background-grey-2-tablet.svg"); } }
 
 @media (max-width: 659px) {
@@ -1414,7 +1415,15 @@ img {
 
 .rates__heading > span {
   display: block;
+  width: 50%;
+  margin: 0 auto;
   text-align: center; }
+  @media (max-width: 1023px) {
+    .rates__heading > span {
+      width: 70.5%; } }
+  @media (max-width: 659px) {
+    .rates__heading > span {
+      width: 35%; } }
 
 .rates__heading > span:first-child {
   font-weight: 700;
@@ -1490,8 +1499,10 @@ img {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 23.1%;
-      margin: 0 auto; } }
+      flex-wrap: wrap;
+      width: 50%;
+      margin: 0 auto;
+      text-align: center; } }
 
 @media (max-width: 659px) {
   .rates--nojs .rates__list-buttons {
@@ -1499,7 +1510,7 @@ img {
 
 @media (max-width: 659px) {
   .rates__item-button {
-    margin: 0 10px 0 8px; } }
+    margin: 0 10px 10px 8px; } }
 
 .rates__button {
   display: none; }
@@ -1578,7 +1589,7 @@ img {
   flex-wrap: wrap;
   width: 940px;
   margin: 0 auto;
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
   @media (max-width: 1023px) {
     .contact__list {
       justify-content: center;
@@ -1590,11 +1601,12 @@ img {
     .contact__list {
       flex-direction: column;
       padding: 0 20px;
-      margin-bottom: 10px; } }
+      margin-bottom: 8px; } }
 
 .contact__item {
   align-items: flex-start;
   width: 300px;
+  margin-bottom: 10px;
   text-align: center; }
   @media (max-width: 1023px) {
     .contact__item {

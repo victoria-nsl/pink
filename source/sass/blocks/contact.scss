@@ -35,7 +35,7 @@
   flex-wrap: wrap;
   width: 940px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   @media (max-width: $tablet-max-width) {
     justify-content: center;
@@ -48,13 +48,14 @@
   @media (max-width: $mobile-max-width) {
     flex-direction: column;
     padding: 0 20px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 }
 
 .contact__item {
   align-items: flex-start;
   width: 300px;
+  margin-bottom: 10px;
   text-align: center;
 
   @media (max-width: $tablet-max-width) {
