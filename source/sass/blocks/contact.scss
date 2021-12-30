@@ -137,7 +137,10 @@
 }
 
 .contact__link {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  margin: 0 auto;
 
   font-weight: 300;
   font-size: 24px;

@@ -1297,7 +1297,7 @@ img {
       margin-bottom: 40px; } }
   @media (max-width: 659px) {
     .rates {
-      padding-top: 123px;
+      padding-top: 121px;
       padding-bottom: 37px;
       margin-bottom: 40px; } }
 
@@ -1325,7 +1325,8 @@ img {
     position: relative;
     width: 100vw;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
+    padding: 2px 0;
     overflow: scroll;
     scrollbar-width: none; }
     .rates__wrapper-table::-webkit-scrollbar {
@@ -1677,7 +1678,10 @@ img {
   text-align: center; }
 
 .contact__link {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  margin: 0 auto;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;

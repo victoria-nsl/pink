@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,17 @@
   <meta name="description" content="Сайт фотоприложения для раскрашивания серых будней">
   <title>Pink-cтраница формы</title>
   <link rel="preload" href="fonts/opensans-light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2"  crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensans-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
   <!-- page-header--nojs - откpытое меню при отключенном js, кнопки нет
     page-header--closed - закрытое меню, кнопка для открытия /бургер/
     page-header--opened - открытое меню, кнопка для закрытия /крестик/ -->
-  <header class = "page-header page-header--closed page-header--nojs">
-    <div class = "page-header__inner">
+  <header class="page-header page-header--closed page-header--nojs">
+    <div class="page-header__inner">
       <nav class="page-header__navigation">
         <div class="page-header__top-menu">
           <a class="page-header__logo-link" href="index.html" aria-label="Перейти на главную страницу">
@@ -30,7 +32,7 @@
               <use xlink:href="img/sprite_auto.svg#icon-logo-header-desktop"></use>
             </svg>
           </a>
-          <button class="page-header__button" type="button"></button>
+          <button class="page-header__button" type="button" aria-label="Открыть/закрыть меню"></button>
         </div>
         <ul class="page-header__list">
           <li class="page-header__item">
@@ -79,7 +81,7 @@
         </a>
       </li>
       <li class="page-footer__item">
-        <a  class="page-footer__social-link page-footer__social-link--facebook" href="#">
+        <a class="page-footer__social-link page-footer__social-link--facebook" href="#">
           <svg width="9" height="18" role="img">
             <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
           </svg>
@@ -95,7 +97,8 @@
         </a>
       </li>
     </ul>
-    <a class="page-footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive"  aria-label="Перейти на сайт HTML Academy">
+    <a class="page-footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive"
+      aria-label="Перейти на сайт HTML Academy">
       <span>Разработано</span>
       <svg width="27" height="34" role="img">
         <use xlink:href="img/sprite_auto.svg#icon-htmlacademy"></use>
@@ -104,4 +107,5 @@
   </footer>
   <script type="module" src="js/main.js"></script>
 </body>
+
 </html>

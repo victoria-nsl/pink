@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
   <link rel="preload" href="fonts/opensans-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
   <!-- page-header--nojs - откpытое меню при отключенном js, кнопки нет
     page-header--closed - закрытое меню, кнопка для открытия /бургер/
@@ -30,7 +32,7 @@
               <use xlink:href="img/sprite_auto.svg#icon-logo-header-desktop"></use>
             </svg>
           </a>
-          <button class="page-header__button" type="button"></button>
+          <button class="page-header__button" type="button" aria-label="Открыть/закрыть меню"></button>
         </div>
         <ul class="page-header__list">
           <li class="page-header__item page-header__item--active">
@@ -167,7 +169,8 @@
       <ul class="feedback__list">
         <li class="feedback__item">
           <blockquote>
-            <p> «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            <p> «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+              познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </p>
             <cite>
               <span>Николай Петров</span>
@@ -187,7 +190,7 @@
         </li>
         <li class="feedback__item">
           <blockquote>
-            <p> «Это приложение мне очень понравилось. Удобное и  нужное. Поднимает настроение.»
+            <p> «Это приложение мне очень понравилось. Удобное и нужное. Поднимает настроение.»
             </p>
             <cite>
               <span>Михаил Сидоров</span>
@@ -315,7 +318,7 @@
             <source type="image/webp" media="(max-width: 659px)" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
             <source type="image/webp" media="(max-width: 1023px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
             <source type="image/webp" media="(min-width: 1024px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
-
+            <!--1x: 1200x502 2x: 2400x1004-->
             <img width="1200" height="502" src="img/map-desktop.png" srcset="img/map-desktop@2x.png 2x" alt="Карта г. Санкт-Петербург с маркером">
           </picture>
         </noscript>
@@ -367,4 +370,5 @@
   <script type="module" src="js/vendor.js"></script>
   <script type="module" src="js/main.js"></script>
 </body>
+
 </html>

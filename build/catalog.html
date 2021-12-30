@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
   <link rel="preload" href="fonts/opensans-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
   <!-- page-header--nojs - откpытое меню при отключенном js, кнопки нет
     page-header--closed - закрытое меню, кнопка для открытия /бургер/
@@ -30,7 +32,7 @@
               <use xlink:href="img/sprite_auto.svg#icon-logo-header-desktop"></use>
             </svg>
           </a>
-          <button class="page-header__button" type="button"></button>
+          <button class="page-header__button" type="button" aria-label="Открыть/закрыть меню"></button>
         </div>
         <ul class="page-header__list">
           <li class="page-header__item">
@@ -86,7 +88,8 @@
           <blockquote class="photo__blockquote photo__blockquote--big">
             <cite>Анна<time datetime="2021-12-12 18:55">(5 минут назад)</time></cite>
             <p>
-              Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию в перископе, задавайте свои вопросы!
+              Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию в перископе,
+              задавайте свои вопросы!
             </p>
           </blockquote>
           <div class="photo__like photo__like--big">
@@ -390,4 +393,5 @@
   </footer>
   <script type="module" src="js/main.js"></script>
 </body>
+
 </html>
