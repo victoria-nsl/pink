@@ -76,10 +76,11 @@
   @media (max-width: $mobile-max-width) {
     flex-direction: column;
     padding: 0 6.25%;
-    padding-top: 43px;
+    padding-top: 130px;
+    margin-top: -12px;
 
     background-image: url("../img/background-grey-mobile.svg");
-    background-position: center -10px;
+    background-position: center top;
   }
 }
 
@@ -114,12 +115,15 @@
   margin-bottom: 5px;
 
   @media (max-width: $tablet-max-width) {
-    width: 100%;
-    padding-top: 179%;
+    width: 268px;
+    padding-top: 480px;
+    margin: 0 auto;
     margin-bottom: 0;
+    overflow: hidden;
   }
 
   @media (max-width: $mobile-max-width) {
+    width: 100%;
     padding-top: 176.5%;
   }
 }
@@ -157,8 +161,13 @@
 
   @media (max-width: $tablet-max-width) {
     width: 100%;
+    height: auto;
     left: 0;
     transform: translateX(0);
+  }
+
+  @media (max-width: $mobile-max-width) {
+    height: 100%;
   }
 }
 
@@ -197,6 +206,8 @@
   @media (max-width: $mobile-max-width) {
     order: 1;
     width: 100%;
+    padding-top: 0;
+    margin-top: -5px;
     margin-bottom: 10px;
   }
 }
