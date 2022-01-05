@@ -13,6 +13,21 @@
   }
 }
 
+.main-screen--form {
+  padding-top: 59px;
+  padding-bottom: 89px;
+
+  @media (max-width: $tablet-max-width) {
+    padding-top: 66px;
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 29px;
+    padding-bottom: 43px;
+  }
+}
+
 .main-screen--catalog h1 {
   width: 358px;
   margin: 0 auto;
@@ -29,6 +44,29 @@
 
   @media (max-width: $mobile-max-width) {
     width: 53.75%;
+
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+  }
+}
+
+.main-screen--form h1 {
+  width: 747px;
+  margin: 0 auto;
+
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 68px;
+  text-align: center;
+  color: $white;
+
+  @media (max-width: $tablet-max-width) {
+    width: 94%;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 71.25%;
 
     font-weight: 300;
     font-size: 24px;
