@@ -114,11 +114,15 @@
           </legend>
           <ul class="form-block__list form-block__list--contacts">
             <li class="form-block__item form-block__item--contacts">
-              <input type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
+              <div class="form-block__wrapper-input  form-block__wrapper-input--phone">
+                <input type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
+              </div>
               <label class="form-block__label form-block__label--contacts" for="phone">номер телефона</label>
             </li>
             <li class="form-block__item form-block__item--contacts">
-              <input type="email" id="email" name="email" placeholder="Введите почту *" required="">
+              <div class="form-block__wrapper-input  form-block__wrapper-input--email">
+                <input type="email" id="email" name="email" placeholder="Введите почту *" required="">
+              </div>
               <label class="form-block__label form-block__label--contacts" for="email">Адрес почты</label>
             </li>
           </ul>
@@ -161,7 +165,7 @@
             Опишите свои эмоции
           </legend>
           <textarea name="feeling" id="feeling" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          <label class="visually-hidden" for="feeling"></label>
+          <label class="visually-hidden" for="feeling">Эмоции</label>
         </fieldset>
 
         <div class="form-block__wrapper-button">
@@ -169,7 +173,7 @@
         </div>
 
         <div class="form-block__notice">
-         <span>*</span> — обязательные для заполнения поля
+          <span>*</span> — обязательные  <span>для заполнения</span> поля
         </div>
       </form>
     </section>
