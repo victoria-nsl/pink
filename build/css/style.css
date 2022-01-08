@@ -2622,8 +2622,8 @@ img {
   @media (max-width: 659px) {
     .form-block__label--name {
       margin-bottom: 5px;
-      padding-right: 0;
-      margin-left: 23px; } }
+      margin-left: 23px;
+      padding-right: 0; } }
 
 .form-block__item--name input {
   flex-grow: 1;
@@ -2738,6 +2738,8 @@ input:checked + .form-block__label--add::after {
 
 .form-block__list--contacts {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
   padding: 28px 60px 13px 60px;
   box-sizing: border-box; }
@@ -2757,15 +2759,14 @@ input:checked + .form-block__label--add::after {
     .form-block__item--contacts {
       width: 100%; } }
 
-.form-block__item--contacts:not(:last-child) {
-  margin-right: 74px; }
-  @media (max-width: 1023px) {
-    .form-block__item--contacts:not(:last-child) {
-      margin-right: 0;
-      margin-bottom: 30px; } }
-  @media (max-width: 659px) {
-    .form-block__item--contacts:not(:last-child) {
-      margin-bottom: 17px; } }
+@media (max-width: 1023px) {
+  .form-block__item--contacts:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px; } }
+
+@media (max-width: 659px) {
+  .form-block__item--contacts:not(:last-child) {
+    margin-bottom: 17px; } }
 
 .form-block__wrapper-input {
   position: relative;
@@ -3022,3 +3023,40 @@ input:checked + .form-block__label--progress::after {
 @media (max-width: 1023px) {
   .form-block__notice span:last-child {
     display: none; } }
+
+.form-block__fieldset--name input:hover,
+.form-block__fieldset--contacts input:hover,
+input:hover + .form-block__label--add::before,
+input:hover + .form-block__label--progress::before,
+.form-block__fieldset--feeling textarea:hover {
+  border: 2px solid #283645; }
+
+.form-block__button:hover {
+  background-color: #1c9b5e;
+  border: 2px solid #1c9b5e; }
+
+.form-block__fieldset--name input:focus,
+.form-block__fieldset--contacts input:focus,
+input:focus + .form-block__label--add::before,
+input:focus + .form-block__label--progress::before,
+.form-block__button:focus,
+.form-block__fieldset--feeling textarea:focus {
+  outline: 2px solid #8da399;
+  outline-offset: -2px; }
+
+.form-block__fieldset--name input:active,
+.form-block__fieldset--contacts input:active,
+input:active + .form-block__label--add::before,
+input:active + .form-block__label--progress::before,
+.form-block__fieldset--feeling textarea:active {
+  outline: none;
+  border: 2px solid #d22856; }
+
+.form-block__button:active {
+  outline: none;
+  color: rgba(255, 255, 255, 0.3); }
+
+.form-block__button:disabled {
+  background-color: #e5e5e5;
+  border: 2px solid #e5e5e5;
+  outline: none; }

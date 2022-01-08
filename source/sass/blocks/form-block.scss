@@ -349,6 +349,8 @@ input:checked + .form-block__label--add::after {
 
 .form-block__list--contacts {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
   padding: 28px 60px 13px 60px;
   box-sizing: border-box;
@@ -374,8 +376,6 @@ input:checked + .form-block__label--add::after {
 }
 
 .form-block__item--contacts:not(:last-child) {
-  margin-right: 74px;
-
   @media (max-width: $tablet-max-width) {
     margin-right: 0;
     margin-bottom: 30px;
@@ -722,4 +722,52 @@ input:checked + .form-block__label--progress::after {
   @media (max-width: $tablet-max-width) {
     display: none;
   }
+}
+
+//СТАЙЛГАЙД
+//hover
+.form-block__fieldset--name input:hover,
+.form-block__fieldset--contacts input:hover,
+input:hover + .form-block__label--add::before,
+input:hover + .form-block__label--progress::before,
+.form-block__fieldset--feeling textarea:hover {
+  border: 2px solid $black-text;
+}
+
+.form-block__button:hover {
+  background-color: $green-hover;
+  border: 2px solid $green-hover;
+}
+
+//focus
+.form-block__fieldset--name input:focus,
+.form-block__fieldset--contacts input:focus,
+input:focus + .form-block__label--add::before,
+input:focus + .form-block__label--progress::before,
+.form-block__button:focus,
+.form-block__fieldset--feeling textarea:focus {
+  outline: 2px solid $grey-focus;
+  outline-offset: -2px;
+}
+
+//active
+.form-block__fieldset--name input:active,
+.form-block__fieldset--contacts input:active,
+input:active + .form-block__label--add::before,
+input:active + .form-block__label--progress::before,
+.form-block__fieldset--feeling textarea:active {
+  outline: none;
+  border: 2px solid $crimson;
+}
+
+.form-block__button:active {
+  outline: none;
+  color: rgba($white, 0.3);
+}
+
+//disabled
+.form-block__button:disabled {
+  background-color: $grey-light;
+  border: 2px solid $grey-light;
+  outline: none;
 }
