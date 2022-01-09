@@ -76,15 +76,15 @@
           <ul class="form-block__list form-block__list--name">
             <li class="form-block__item form-block__item--name">
               <label class="form-block__label form-block__label--name" for="surname">Фамилия:</label>
-              <input type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required="">
+              <input type="text" id="surname" name="surname" placeholder="Укажите фамилию *" pattern="^[A-Za-zА-Яа-яЁё\s\-]+$" title="Фамилия должна быть на русском или английском языке, не содержать цифр и знаков, кроме тире" required="">
             </li>
             <li class="form-block__item form-block__item--name">
               <label class="form-block__label form-block__label--name" for="name">Имя:</label>
-              <input type="text" id="name" name="name" placeholder="Введите ваше имя *" required="">
+              <input type="text" id="name" name="name" placeholder="Введите ваше имя *" pattern="^[A-Za-zА-Яа-яЁё\s\-]+$" title="Имя должно быть на русском или английском языке, не содержать цифр и знаков, кроме тире" required="">
             </li>
             <li class="form-block__item form-block__item--name">
               <label class="form-block__label form-block__label--name" for="patronymic">Отчество:</label>
-              <input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+              <input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже" pattern="^[А-Яа-яЁё]+$" title="Отчество должно быть на русском языке, не содержать цифр и знаков">
             </li>
           </ul>
         </fieldset>
@@ -116,13 +116,13 @@
           <ul class="form-block__list form-block__list--contacts">
             <li class="form-block__item form-block__item--contacts">
               <div class="form-block__wrapper-input  form-block__wrapper-input--phone">
-                <input type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста">
+                <input type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста" autocomplete="off" pattern="^\+?[\d()\-]+$" maxlength="18">
               </div>
               <label class="form-block__label form-block__label--contacts" for="phone">номер телефона</label>
             </li>
             <li class="form-block__item form-block__item--contacts">
               <div class="form-block__wrapper-input  form-block__wrapper-input--email">
-                <input type="email" id="email" name="email" placeholder="Введите почту *" required="">
+                <input type="email" id="email" name="email" placeholder="Введите почту *" autocomplete="off" required="">
               </div>
               <label class="form-block__label form-block__label--contacts" for="email">Адрес почты</label>
             </li>
