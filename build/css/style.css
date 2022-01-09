@@ -3039,6 +3039,11 @@ input:hover + .form-block__label--progress::before,
 .form-block__fieldset--contacts input:focus,
 input:focus + .form-block__label--add::before,
 input:focus + .form-block__label--progress::before,
+.form-block__button:focus,
+.form-block__fieldset--feeling textarea:focus {
+  outline: 2px solid #8da399;
+  outline-offset: -2px; }
+
 .form-block__fieldset--name input:active,
 .form-block__fieldset--contacts input:active,
 input:active + .form-block__label--add::before,
