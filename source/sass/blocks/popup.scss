@@ -169,6 +169,10 @@
   cursor: pointer;
 }
 
+.popup__input-error {
+  border: 2px solid $red;
+}
+
 //СТАЙЛГАЙД
 //hover
 .popup__button:hover {

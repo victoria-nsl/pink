@@ -3193,6 +3193,9 @@ input:active + .form-block__label--progress::before,
   border-radius: 3px;
   cursor: pointer; }
 
+.popup__input-error {
+  border: 2px solid #ff0000; }
+
 .popup__button:hover {
   background-color: #1c9b5e;
   border: 2px solid #1c9b5e; }
