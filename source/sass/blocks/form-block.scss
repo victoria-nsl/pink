@@ -724,6 +724,10 @@ input:checked + .form-block__label--progress::after {
   }
 }
 
+.form__input-error {
+  outline: 2px solid $red;
+}
+
 //СТАЙЛГАЙД
 //hover
 .form-block__fieldset--name input:hover,

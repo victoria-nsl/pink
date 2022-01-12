@@ -69,22 +69,30 @@
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
         <span class="form-block__text-span">Пожалуйста, заполните форму ниже:</span>
       </p>
-      <form  class="form-block__form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
+      <form class="form-block__form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
 
         <fieldset class="form-block__fieldset form-block__fieldset--name">
           <legend class="visually-hidden">ФИО</legend>
           <ul class="form-block__list form-block__list--name">
             <li class="form-block__item form-block__item--name">
               <label class="form-block__label form-block__label--name" for="surname">Фамилия:</label>
-              <input type="text"  id="surname" name="surname" placeholder="Укажите фамилию *" pattern ="^[A-Za-zА-Яа-яЁё\s\-]+$" title="Фамилия должна быть на русском или английском языке, не содержать цифр и знаков, кроме тире" required>
+              <input type="text" id="surname" name="surname" placeholder="Укажите фамилию *"
+                pattern="^[A-Za-zА-Яа-яЁё\s\-]+$"
+                title="Фамилия должна быть на русском или английском языке, не содержать цифр и знаков, кроме тире"
+                autocomplete="off" data-input-required required>
             </li>
             <li class="form-block__item form-block__item--name">
               <label class="form-block__label form-block__label--name" for="name">Имя:</label>
-              <input type="text"  id="name" name="name" placeholder="Введите ваше имя *" pattern ="^[A-Za-zА-Яа-яЁё\s\-]+$" title="Имя должно быть на русском или английском языке, не содержать цифр и знаков, кроме тире" required>
+              <input type="text" id="name" name="name" placeholder="Введите ваше имя *"
+                pattern="^[A-Za-zА-Яа-яЁё\s\-]+$"
+                title="Имя должно быть на русском или английском языке, не содержать цифр и знаков, кроме тире"
+                autocomplete="off" data-input-required required>
             </li>
             <li class="form-block__item form-block__item--name">
               <label class="form-block__label form-block__label--name" for="patronymic">Отчество:</label>
-              <input type="text"  id="patronymic" name="patronymic" placeholder="Ну и отчество тоже" pattern ="^[А-Яа-яЁё]+$" title="Отчество должно быть на русском языке, не содержать цифр и знаков">
+              <input type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже"
+                pattern="^[А-Яа-яЁё]+$" autocomplete="off"
+                title="Отчество должно быть на русском языке, не содержать цифр и знаков">
             </li>
           </ul>
         </fieldset>
@@ -95,15 +103,15 @@
           </legend>
           <ul class="form-block__list form-block__list--add">
             <li class="form-block__item form-block__item--add">
-              <input class="visually-hidden" type="radio"  id="ios" name="add" value="ios" checked>
+              <input class="visually-hidden" type="radio" id="ios" name="add" value="ios" checked>
               <label class="form-block__label form-block__label--add" for="ios">Pink для iOS</label>
             </li>
             <li class="form-block__item form-block__item--add">
-              <input class="visually-hidden" type="radio"  id="android" name="add" value="android">
+              <input class="visually-hidden" type="radio" id="android" name="add" value="android">
               <label class="form-block__label form-block__label--add" for="android">Pink на Android</label>
             </li>
             <li class="form-block__item form-block__item--add">
-              <input class="visually-hidden" type="radio"  id="windows" name="add" value="windows">
+              <input class="visually-hidden" type="radio" id="windows" name="add" value="windows">
               <label class="form-block__label form-block__label--add" for="windows">Windows Phone</label>
             </li>
           </ul>
@@ -116,15 +124,17 @@
           <ul class="form-block__list form-block__list--contacts">
             <li class="form-block__item form-block__item--contacts">
               <div class="form-block__wrapper-input  form-block__wrapper-input--phone">
-                <input type="tel"  id="phone" name="phone" placeholder="Номер, пожалуйста" autocomplete="off" pattern="^\+?[\d()\-\s]+$" maxlength="18">
+                <input type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста" autocomplete="off"
+                  pattern="^\+?[\d()\-\s]+$" maxlength="18">
               </div>
               <label class="form-block__label form-block__label--contacts" for="phone">номер телефона</label>
             </li>
             <li class="form-block__item form-block__item--contacts">
               <div class="form-block__wrapper-input  form-block__wrapper-input--email">
-                <input type="email"  id="email" name="email" placeholder="Введите почту *"  autocomplete="off" required>
+                <input type="email" id="email" name="email" placeholder="Введите почту *" autocomplete="off"
+                  data-input-required required>
               </div>
-              <label  class="form-block__label form-block__label--contacts" for="email">Адрес почты</label>
+              <label class="form-block__label form-block__label--contacts" for="email">Адрес почты</label>
             </li>
           </ul>
         </fieldset>
@@ -135,27 +145,27 @@
           </legend>
           <ul class="form-block__list form-block__list--progress">
             <li class="form-block__item form-block__item--progress">
-              <input class="visually-hidden" type="checkbox"  id="shark" name="shark" checked>
+              <input class="visually-hidden" type="checkbox" id="shark" name="shark" checked>
               <label class="form-block__label form-block__label--progress" for="shark">Сделал селфи с акулой</label>
             </li>
             <li class="form-block__item form-block__item--progress">
-              <input class="visually-hidden" type="checkbox"  id="beach" name="beach" checked>
+              <input class="visually-hidden" type="checkbox" id="beach" name="beach" checked>
               <label class="form-block__label form-block__label--progress" for="beach">Обгорел на пляже</label>
             </li>
             <li class="form-block__item form-block__item--progress">
-              <input class="visually-hidden" type="checkbox"  id="chuck-norris" name="chuck-norris">
+              <input class="visually-hidden" type="checkbox" id="chuck-norris" name="chuck-norris">
               <label class="form-block__label form-block__label--progress" for="chuck-norris">Видел Чака Норриса</label>
             </li>
             <li class="form-block__item form-block__item--progress">
-              <input class="visually-hidden" type="checkbox"  id="souvenirs" name="souvenirs">
+              <input class="visually-hidden" type="checkbox" id="souvenirs" name="souvenirs">
               <label class="form-block__label form-block__label--progress" for="souvenirs">Накупил сувениров</label>
             </li>
             <li class="form-block__item form-block__item--progress">
-              <input class="visually-hidden" type="checkbox"  id="tower" name="tower" checked>
+              <input class="visually-hidden" type="checkbox" id="tower" name="tower" checked>
               <label class="form-block__label form-block__label--progress" for="tower">Удержал башню</label>
             </li>
             <li class="form-block__item form-block__item--progress">
-              <input class="visually-hidden" type="checkbox"  id="hotel" name="hotel">
+              <input class="visually-hidden" type="checkbox" id="hotel" name="hotel">
               <label class="form-block__label form-block__label--progress" for="hotel">Разгромил отель</label>
             </li>
           </ul>
@@ -165,7 +175,8 @@
           <legend class="form-block__legend form-block__legend--feeling">
             Опишите свои эмоции
           </legend>
-          <textarea name="feeling" id="feeling" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <textarea name="feeling" id="feeling"
+            placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           <label class="visually-hidden" for="feeling">Эмоции</label>
         </fieldset>
 
@@ -240,7 +251,8 @@
     <div class="popup__inner popup__inner--success">
       <h2>Ваша заявка отправлена</h2>
       <p>
-        Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и <br>оповестим вас.
+        Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и <br>оповестим
+        вас.
       </p>
       <div class="popup__wrapper-button popup__wrapper-button--success">
         <button class="popup__button popup__button--success" type="button">Закрыть окно</button>

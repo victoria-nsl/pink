@@ -1,4 +1,6 @@
 const KEYCODE_TAB = 9;
+const KEY_ESCAPE= 'Escape';
+const KEY_ESC = 'Esc';
 
 const reloadBrowser = (widthStart,  widthWindowReload) => {
   if (window.innerWidth >= widthWindowReload && widthStart < widthWindowReload) {
@@ -28,4 +30,6 @@ const setFocusTab = (evt, firstElement, lastElement) => {
   }
 };
 
-export {reloadBrowser, setFocusTab};
+const isEscEvent = (evt) =>  evt.key ===  KEY_ESCAPE || evt.key === KEY_ESC;
+
+export {reloadBrowser, setFocusTab, isEscEvent};

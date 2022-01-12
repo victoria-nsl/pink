@@ -3024,6 +3024,9 @@ input:checked + .form-block__label--progress::after {
   .form-block__notice span:last-child {
     display: none; } }
 
+.form__input-error {
+  outline: 2px solid #ff0000; }
+
 .form-block__fieldset--name input:hover,
 .form-block__fieldset--contacts input:hover,
 input:hover + .form-block__label--add::before,
@@ -3195,9 +3198,6 @@ input:active + .form-block__label--progress::before,
   background-color: #2aab6d;
   border-radius: 3px;
   cursor: pointer; }
-
-.popup__input-error {
-  border: 2px solid #ff0000; }
 
 .popup__button:hover {
   background-color: #1c9b5e;
