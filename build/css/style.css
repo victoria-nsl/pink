@@ -3078,6 +3078,9 @@ input:active + .form-block__label--progress::before,
 .popup--success {
   display: none; }
 
+.popup-show {
+  display: block; }
+
 .popup__inner {
   position: absolute;
   top: 50%;
